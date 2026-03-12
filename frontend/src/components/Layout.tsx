@@ -1,5 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 import styles from "./Layout.module.css";
+import { CartBadge } from "./CartBadge/CartBadge";
+
 
 export default function Layout() {
   return (
@@ -10,8 +12,12 @@ export default function Layout() {
             <span className={styles.logoIcon}>🌰</span>
             <h1 className={styles.title}>Buckeye Marketplace</h1>
           </Link>
+
+          {/* ⭐ Cart Badge added to the header */}
+          <CartBadge />
         </div>
       </header>
+
       <main className={styles.main}>
         <Outlet />
       </main>
