@@ -62,7 +62,7 @@ public class ProductsController : ControllerBase
             return NotFound();
 
         return Ok(new ProductResponse(
-            product.Id,
+        product.Id,
             product.Name,
             product.Description,
             product.Price,
